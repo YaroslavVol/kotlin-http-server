@@ -17,7 +17,7 @@ dependencies {
     implementation("org.slf4j:slf4j-log4j12:2.0.3")
 
     testImplementation("org.assertj:assertj-core:3.23.1")
-    testImplementation("junit:junit:4.13.1")
+    testImplementation("junit:junit:4.13.2")
     testImplementation(kotlin("test"))
 }
 

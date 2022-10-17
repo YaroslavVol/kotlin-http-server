@@ -5,10 +5,12 @@ import java.net.Socket
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 
-class Server(val port: Int): AutoCloseable {
+class Server(val port: Int,
+             val maxIncomingConnections: Int = 1): AutoCloseable {
+
     private val logger = LoggerFactory.getLogger(Server::class.java)
 
-    private val serverSocket = ServerSocket(port)
+    private val serverSocket = ServerSocket(port, maxIncomingConnections)
     private val threadPool = Executors.newSingleThreadExecutor()
 
     init {
@@ -39,11 +41,11 @@ class Server(val port: Int): AutoCloseable {
 
         val requestLine = input.readLine()
         logger.info("Received request: {}", requestLine)
-
+        Thread.sleep(5000)
         output.print("""
             HTTP/1.1 200 OK
-           
-            Hello World!""".trimIndent())
+
+            Hello, World!""".trimIndent())
         output.flush()
     }
 

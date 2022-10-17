@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-15T04:58:24" hostname="yar-HN-WX9X" time="0.127">
+<testsuite name="ServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-17T12:57:27" hostname="yar-HN-WX9X" time="21.631">
   <properties/>
-  <testcase name="server should return OK hello world response()" classname="ServerTest" time="0.127"/>
+  <testcase name="server should refuse to accept more connections that maxIncomingConnections()" classname="ServerTest" time="21.631"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (Server).
 log4j:WARN Please initialize the log4j system properly.
