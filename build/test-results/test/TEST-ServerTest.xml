@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-10-25T11:38:23" hostname="yar-HN-WX9X" time="0.182">
+<testsuite name="ServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-16T09:31:03" hostname="yar-HN-WX9X" time="0.173">
   <properties/>
-  <testcase name="server should echo body and headers()" classname="ServerTest" time="0.182"/>
+  <testcase name="server should return OK hello world response()" classname="ServerTest" time="0.173"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[log4j:WARN No appenders could be found for logger (Server).
 log4j:WARN Please initialize the log4j system properly.
